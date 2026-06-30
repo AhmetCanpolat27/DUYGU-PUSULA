@@ -1,0 +1,39 @@
+MODEL EĞİTİMİ VE ÇALIŞTIRMA BİLGİSİ
+
+Bu projede eğitilmiş BERTurk model dosyaları, dosya yükleme sınırı 10 MB olduğu için teslim ZIP dosyasına eklenmemiştir. Model dosyaları normalde models/berturk klasörü içinde yer almaktadır.
+
+Model yeniden eğitilmek istenirse aşağıdaki adımlar izlenmelidir.
+
+1. Proje klasörü açılır:
+
+cd AhmetCanpolat_222523024_DuyguPusula
+
+2. Sanal ortam oluşturulur:
+
+python -m venv .venv
+
+3. Sanal ortam aktif edilir:
+
+..venv\Scripts\Activate.ps1
+
+4. Gerekli kütüphaneler kurulur:
+
+pip install -r requirements.txt
+
+5. Model eğitimi proje ana klasöründen çalıştırılır:
+
+python -m src.train_berturk
+
+Bu komut çalıştırıldığında src klasörü içerisindeki train_berturk.py dosyası çalışır. Eğitim için data/processed klasörü içerisindeki işlenmiş veri seti kullanılır. Model, bu veri setindeki metin ve duygu etiketlerini kullanarak eğitilir.
+
+Eğitim tamamlandıktan sonra model otomatik olarak aşağıdaki klasöre kaydedilir:
+
+models/berturk
+
+Bu klasör oluştuğunda uygulama artık eğitilmiş modeli kullanarak tahmin yapabilir.
+
+6. Arayüzü çalıştırmak için aşağıdaki komut kullanılır:
+
+streamlit run app.py
+
+Bu komut ile Streamlit arayüzü açılır. Kullanıcı arayüz üzerinden metin girerek duygu analizi yapabilir.

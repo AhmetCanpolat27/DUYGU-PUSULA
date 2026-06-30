@@ -1,0 +1,17 @@
+DuyguPusula Final Model Testi
+======================================================================
+
+Toplam test cümlesi: 50
+Accuracy: 0.9800
+
+              precision    recall  f1-score   support
+
+    Mutluluk     1.0000    1.0000    1.0000        10
+      Üzüntü     0.9091    1.0000    0.9524        10
+        Öfke     1.0000    0.9000    0.9474        10
+       Korku     1.0000    1.0000    1.0000        10
+   Şaşkınlık     1.0000    1.0000    1.0000        10
+
+    accuracy                         0.9800        50
+   macro avg     0.9818    0.9800    0.9799        50
+weighted avg     0.9818    0.9800    0.9799        50

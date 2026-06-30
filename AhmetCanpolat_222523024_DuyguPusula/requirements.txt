@@ -1,0 +1,16 @@
+﻿pandas
+numpy
+scikit-learn
+matplotlib
+joblib
+streamlit
+transformers
+datasets
+torch
+accelerate
+tqdm
+rich
+safetensors
+openpyxl
+sentencepiece
+protobuf
